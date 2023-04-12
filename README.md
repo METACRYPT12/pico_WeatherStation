@@ -46,4 +46,13 @@ The Raspberry Pi Pico W running a python script is used to poll the serial port 
 ### Setup
 
 The WiFi ssid and password must be updated in /lib/secrets.py for Pi Pico W to connect to the internet.  
-An OpenWeatherMap API key needs to be generated and copied in /lib/secrets.py
+An OpenWeatherMap API key needs to be generated and copied in /lib/secrets.py.  
+
+## Auto-Start Instructions
+
+Simply Copy the main.py for any of the two Variants you want to Auto-Start at boot.  
+Additionally external power supply can be connected through VSYS to enable the user to push updates to the Pi Pico W on the go.  
+
+## Future
+
+A Display may be added later to the project.  
