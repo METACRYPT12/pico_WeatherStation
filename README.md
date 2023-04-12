@@ -9,8 +9,8 @@ It is built into 2 different Variants
 
 ### Hardware
 
-BMP 180: It is an I2C based implementation of hardware used to detect Temperature, Pressure and Altitude.  
-DHT11: It uses 1-Wire protocol to report Temperature and Humidity.  
+BMP 180: It is an I2C based implementation of hardware used to detect Temperature, Pressure and Altitude. (Default: SDA = GPIO14 SCL = GPIO15)  
+DHT11: It uses 1-Wire protocol to report Temperature and Humidity. (Default: DATA = GPIO28)  
 Raspberry Pi Pico W: A Pi Pico with WiFi module is used to connect to the internet and process data.  
 
 ### Software
@@ -18,20 +18,20 @@ Raspberry Pi Pico W: A Pi Pico with WiFi module is used to connect to the intern
 The Raspberry Pi Pico W running a python script is used to poll the serial port for data pulled from the sensors, and publishes the data to a ThingSpeak Channel.  
 ThingSpeak is used to Visualise the Data.  
 
-https://github.com/METACRYPT12/pico_WeatherStation/blob/master/img/ThingSpeak_Charts.png
+![ThingSpeak Charts](https://github.com/METACRYPT12/pico_WeatherStation/blob/master/img/ThingSpeak_Charts.png)
 
 ### Setup
 
 The WiFi ssid and password must be updated in /lib/secrets.py for Pi Pico W to connect to the internet.  
 A ThingSpeak Channel is Created after signing up and the following fields need to be added.  
 
-https://github.com/METACRYPT12/pico_WeatherStation/blob/master/img/ThingSpeak_Fields.png
+![ThingSpeak Fields](https://github.com/METACRYPT12/pico_WeatherStation/blob/master/img/ThingSpeak_Fields.png)
 
 Now the Write API key for the Channel is copied and updated in /lib/secrets.py
 
 ### Circuit Diagram
 
-https://github.com/METACRYPT12/pico_WeatherStation/blob/master/img/Pinout_Diagram.jpg
+![Circuit Diagram](https://github.com/METACRYPT12/pico_WeatherStation/blob/master/img/Pinout_Diagram.jpg)
 
 ## Variant 2
 
